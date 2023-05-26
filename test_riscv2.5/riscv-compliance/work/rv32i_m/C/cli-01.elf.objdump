@@ -1,0 +1,321 @@
+
+/home/alejandro/Escritorio/test_riscv2.5/riscv-compliance/work/rv32i_m/C/cli-01.elf:     formato del fichero elf32-littleriscv
+
+
+Desensamblado de la sección .text.init:
+
+00000000 <rvtest_entry_point>:
+   0:	feedc0b7          	lui	ra,0xfeedc
+   4:	ead08093          	add	ra,ra,-339 # feedbead <_end+0xfeedae1d>
+   8:	ff76e137          	lui	sp,0xff76e
+   c:	f5610113          	add	sp,sp,-170 # ff76df56 <_end+0xff76cec6>
+  10:	7fbb71b7          	lui	gp,0x7fbb7
+  14:	fab18193          	add	gp,gp,-85 # 7fbb6fab <_end+0x7fbb5f1b>
+  18:	bfddb237          	lui	tp,0xbfddb
+  1c:	7d520213          	add	tp,tp,2005 # bfddb7d5 <_end+0xbfdda745>
+  20:	00000297          	auipc	t0,0x0
+  24:	0d828293          	add	t0,t0,216 # f8 <rvtest_code_begin>
+  28:	00001317          	auipc	t1,0x1
+  2c:	fd830313          	add	t1,t1,-40 # 1000 <rvtest_data_begin>
+  30:	b7fbb3b7          	lui	t2,0xb7fbb
+  34:	6fa38393          	add	t2,t2,1786 # b7fbb6fa <_end+0xb7fba66a>
+  38:	5bfde437          	lui	s0,0x5bfde
+  3c:	b7d40413          	add	s0,s0,-1155 # 5bfddb7d <_end+0x5bfdcaed>
+  40:	adfef4b7          	lui	s1,0xadfef
+  44:	dbe48493          	add	s1,s1,-578 # adfeedbe <_end+0xadfedd2e>
+  48:	56ff7537          	lui	a0,0x56ff7
+  4c:	6df50513          	add	a0,a0,1759 # 56ff76df <_end+0x56ff664f>
+  50:	ab7fc5b7          	lui	a1,0xab7fc
+  54:	b6f58593          	add	a1,a1,-1169 # ab7fbb6f <_end+0xab7faadf>
+  58:	d5bfe637          	lui	a2,0xd5bfe
+  5c:	db760613          	add	a2,a2,-585 # d5bfddb7 <_end+0xd5bfcd27>
+  60:	eadff6b7          	lui	a3,0xeadff
+  64:	edb68693          	add	a3,a3,-293 # eadfeedb <_end+0xeadfde4b>
+  68:	f56ff737          	lui	a4,0xf56ff
+  6c:	76d70713          	add	a4,a4,1901 # f56ff76d <_end+0xf56fe6dd>
+  70:	fab807b7          	lui	a5,0xfab80
+  74:	bb678793          	add	a5,a5,-1098 # fab7fbb6 <_end+0xfab7eb26>
+  78:	7d5c0837          	lui	a6,0x7d5c0
+  7c:	ddb80813          	add	a6,a6,-549 # 7d5bfddb <_end+0x7d5bed4b>
+  80:	beae08b7          	lui	a7,0xbeae0
+  84:	eed88893          	add	a7,a7,-275 # beadfeed <_end+0xbeadee5d>
+  88:	df570937          	lui	s2,0xdf570
+  8c:	f7690913          	add	s2,s2,-138 # df56ff76 <_end+0xdf56eee6>
+  90:	6fab89b7          	lui	s3,0x6fab8
+  94:	fbb98993          	add	s3,s3,-69 # 6fab7fbb <_end+0x6fab6f2b>
+  98:	b7d5ca37          	lui	s4,0xb7d5c
+  9c:	fdda0a13          	add	s4,s4,-35 # b7d5bfdd <_end+0xb7d5af4d>
+  a0:	dbeaeab7          	lui	s5,0xdbeae
+  a4:	feea8a93          	add	s5,s5,-18 # dbeadfee <_end+0xdbeacf5e>
+  a8:	6df57b37          	lui	s6,0x6df57
+  ac:	ff7b0b13          	add	s6,s6,-9 # 6df56ff7 <_end+0x6df55f67>
+  b0:	b6fabbb7          	lui	s7,0xb6fab
+  b4:	7fbb8b93          	add	s7,s7,2043 # b6fab7fb <_end+0xb6faa76b>
+  b8:	db7d6c37          	lui	s8,0xdb7d6
+  bc:	bfdc0c13          	add	s8,s8,-1027 # db7d5bfd <_end+0xdb7d4b6d>
+  c0:	edbebcb7          	lui	s9,0xedbeb
+  c4:	dfec8c93          	add	s9,s9,-514 # edbeadfe <_end+0xedbe9d6e>
+  c8:	76df5d37          	lui	s10,0x76df5
+  cc:	6ffd0d13          	add	s10,s10,1791 # 76df56ff <_end+0x76df466f>
+  d0:	bb6fbdb7          	lui	s11,0xbb6fb
+  d4:	b7fd8d93          	add	s11,s11,-1153 # bb6fab7f <_end+0xbb6f9aef>
+  d8:	ddb7de37          	lui	t3,0xddb7d
+  dc:	5bfe0e13          	add	t3,t3,1471 # ddb7d5bf <_end+0xddb7c52f>
+  e0:	eedbfeb7          	lui	t4,0xeedbf
+  e4:	adfe8e93          	add	t4,t4,-1313 # eedbeadf <_end+0xeedbda4f>
+  e8:	f76dff37          	lui	t5,0xf76df
+  ec:	56ff0f13          	add	t5,t5,1391 # f76df56f <_end+0xf76de4df>
+  f0:	fbb70fb7          	lui	t6,0xfbb70
+  f4:	ab7f8f93          	add	t6,t6,-1353 # fbb6fab7 <_end+0xfbb6ea27>
+
+000000f8 <rvtest_code_begin>:
+  f8:	00001217          	auipc	tp,0x1
+  fc:	f1820213          	add	tp,tp,-232 # 1010 <data_begin>
+
+00000100 <inst_0>:
+ 100:	5501                	li	a0,-32
+ 102:	00a22023          	sw	a0,0(tp) # 0 <rvtest_entry_point>
+
+00000106 <inst_1>:
+ 106:	4901                	li	s2,0
+ 108:	01222223          	sw	s2,4(tp) # 4 <rvtest_entry_point+0x4>
+
+0000010c <inst_2>:
+ 10c:	487d                	li	a6,31
+ 10e:	01022423          	sw	a6,8(tp) # 8 <rvtest_entry_point+0x8>
+
+00000112 <inst_3>:
+ 112:	4e85                	li	t4,1
+ 114:	01d22623          	sw	t4,12(tp) # c <offset>
+
+00000118 <inst_4>:
+ 118:	4789                	li	a5,2
+ 11a:	00f22823          	sw	a5,16(tp) # 10 <offset+0x4>
+
+0000011e <inst_5>:
+ 11e:	4111                	li	sp,4
+ 120:	00222a23          	sw	sp,20(tp) # 14 <offset+0x8>
+
+00000124 <inst_6>:
+ 124:	4721                	li	a4,8
+ 126:	00e22c23          	sw	a4,24(tp) # 18 <offset+0xc>
+
+0000012a <inst_7>:
+ 12a:	4dc1                	li	s11,16
+ 12c:	01b22e23          	sw	s11,28(tp) # 1c <offset+0x10>
+
+00000130 <inst_8>:
+ 130:	5429                	li	s0,-22
+ 132:	02822023          	sw	s0,32(tp) # 20 <offset+0x14>
+
+00000136 <inst_9>:
+ 136:	56f9                	li	a3,-2
+ 138:	02d22223          	sw	a3,36(tp) # 24 <offset+0x18>
+
+0000013c <inst_10>:
+ 13c:	5f75                	li	t5,-3
+ 13e:	03e22423          	sw	t5,40(tp) # 28 <offset+0x1c>
+
+00000142 <inst_11>:
+ 142:	55ed                	li	a1,-5
+ 144:	02b22623          	sw	a1,44(tp) # 2c <offset+0x20>
+
+00000148 <inst_12>:
+ 148:	535d                	li	t1,-9
+ 14a:	02622823          	sw	t1,48(tp) # 30 <offset+0x24>
+
+0000014e <inst_13>:
+ 14e:	5d3d                	li	s10,-17
+ 150:	03a22a23          	sw	s10,52(tp) # 34 <offset+0x28>
+
+00000154 <inst_14>:
+ 154:	44d5                	li	s1,21
+ 156:	02922c23          	sw	s1,56(tp) # 38 <offset+0x2c>
+
+0000015a <inst_15>:
+ 15a:	4081                	li	ra,0
+ 15c:	02122e23          	sw	ra,60(tp) # 3c <offset+0x30>
+
+00000160 <inst_16>:
+ 160:	4601                	li	a2,0
+ 162:	04c22023          	sw	a2,64(tp) # 40 <offset+0x34>
+
+00000166 <inst_17>:
+ 166:	4881                	li	a7,0
+ 168:	05122223          	sw	a7,68(tp) # 44 <offset+0x38>
+
+0000016c <inst_18>:
+ 16c:	4381                	li	t2,0
+ 16e:	04722423          	sw	t2,72(tp) # 48 <offset+0x3c>
+
+00000172 <inst_19>:
+ 172:	4281                	li	t0,0
+ 174:	04522623          	sw	t0,76(tp) # 4c <offset+0x40>
+
+00000178 <inst_20>:
+ 178:	4a01                	li	s4,0
+ 17a:	05422823          	sw	s4,80(tp) # 50 <offset+0x44>
+
+0000017e <inst_21>:
+ 17e:	4001                	c.li	zero,0
+ 180:	04022a23          	sw	zero,84(tp) # 54 <offset+0x48>
+
+00000184 <inst_22>:
+ 184:	4f81                	li	t6,0
+ 186:	05f22c23          	sw	t6,88(tp) # 58 <offset+0x4c>
+
+0000018a <inst_23>:
+ 18a:	4c01                	li	s8,0
+ 18c:	05822e23          	sw	s8,92(tp) # 5c <offset+0x50>
+
+00000190 <inst_24>:
+ 190:	4181                	li	gp,0
+ 192:	06322023          	sw	gp,96(tp) # 60 <offset+0x54>
+
+00000196 <inst_25>:
+ 196:	4b01                	li	s6,0
+ 198:	07622223          	sw	s6,100(tp) # 64 <offset+0x58>
+
+0000019c <inst_26>:
+ 19c:	4c81                	li	s9,0
+ 19e:	07922423          	sw	s9,104(tp) # 68 <offset+0x5c>
+
+000001a2 <inst_27>:
+ 1a2:	4a81                	li	s5,0
+ 1a4:	07522623          	sw	s5,108(tp) # 6c <offset+0x60>
+
+000001a8 <inst_28>:
+ 1a8:	4981                	li	s3,0
+ 1aa:	07322823          	sw	s3,112(tp) # 70 <offset+0x64>
+ 1ae:	00001097          	auipc	ra,0x1
+ 1b2:	ed608093          	add	ra,ra,-298 # 1084 <signature_x1_0>
+
+000001b6 <inst_29>:
+ 1b6:	4e01                	li	t3,0
+ 1b8:	01c0a023          	sw	t3,0(ra)
+
+000001bc <inst_30>:
+ 1bc:	4201                	li	tp,0
+ 1be:	0040a223          	sw	tp,4(ra)
+
+000001c2 <inst_31>:
+ 1c2:	4b81                	li	s7,0
+ 1c4:	0170a423          	sw	s7,8(ra)
+ 1c8:	00000013          	nop
+ 1cc:	00000013          	nop
+
+000001d0 <rvtest_code_end>:
+ 1d0:	00001517          	auipc	a0,0x1
+ 1d4:	e4050513          	add	a0,a0,-448 # 1010 <data_begin>
+ 1d8:	00001597          	auipc	a1,0x1
+ 1dc:	eb858593          	add	a1,a1,-328 # 1090 <_end>
+ 1e0:	80001637          	lui	a2,0x80001
+ 1e4:	0621                	add	a2,a2,8 # 80001008 <_end+0x7fffff78>
+
+000001e6 <compliance_halt_loop>:
+ 1e6:	04b50763          	beq	a0,a1,234 <compliance_halt_break>
+ 1ea:	00450693          	add	a3,a0,4
+
+000001ee <compliance_halt_loop2>:
+ 1ee:	16fd                	add	a3,a3,-1
+ 1f0:	00068703          	lb	a4,0(a3)
+ 1f4:	40475793          	sra	a5,a4,0x4
+ 1f8:	8bbd                	and	a5,a5,15
+ 1fa:	4829                	li	a6,10
+ 1fc:	0107c463          	blt	a5,a6,204 <notLetter>
+ 200:	02778793          	add	a5,a5,39
+
+00000204 <notLetter>:
+ 204:	03078793          	add	a5,a5,48
+ 208:	00f60023          	sb	a5,0(a2)
+ 20c:	40075793          	sra	a5,a4,0x0
+ 210:	8bbd                	and	a5,a5,15
+ 212:	4829                	li	a6,10
+ 214:	0107c463          	blt	a5,a6,21c <notLetter2>
+ 218:	02778793          	add	a5,a5,39
+
+0000021c <notLetter2>:
+ 21c:	03078793          	add	a5,a5,48
+ 220:	00f60023          	sb	a5,0(a2)
+ 224:	fcd515e3          	bne	a0,a3,1ee <compliance_halt_loop2>
+ 228:	0511                	add	a0,a0,4
+ 22a:	4729                	li	a4,10
+ 22c:	00e60023          	sb	a4,0(a2)
+ 230:	bf5d                	j	1e6 <compliance_halt_loop>
+ 232:	a009                	j	234 <compliance_halt_break>
+
+00000234 <compliance_halt_break>:
+ 234:	80001537          	lui	a0,0x80001
+ 238:	0525                	add	a0,a0,9 # 80001009 <_end+0x7fffff79>
+ 23a:	00d50023          	sb	a3,0(a0)
+	...
+
+Desensamblado de la sección .data:
+
+00001000 <rvtest_data_begin>:
+    1000:	cafe                	sw	t6,84(sp)
+    1002:	babe                	.2byte	0xbabe
+
+00001004 <rvtest_data_end>:
+	...
+
+00001010 <data_begin>:
+    1010:	deadbeef          	jal	t4,fffdc5fa <_end+0xfffdb56a>
+    1014:	deadbeef          	jal	t4,fffdc5fe <_end+0xfffdb56e>
+    1018:	deadbeef          	jal	t4,fffdc602 <_end+0xfffdb572>
+    101c:	deadbeef          	jal	t4,fffdc606 <_end+0xfffdb576>
+    1020:	deadbeef          	jal	t4,fffdc60a <_end+0xfffdb57a>
+    1024:	deadbeef          	jal	t4,fffdc60e <_end+0xfffdb57e>
+    1028:	deadbeef          	jal	t4,fffdc612 <_end+0xfffdb582>
+    102c:	deadbeef          	jal	t4,fffdc616 <_end+0xfffdb586>
+    1030:	deadbeef          	jal	t4,fffdc61a <_end+0xfffdb58a>
+    1034:	deadbeef          	jal	t4,fffdc61e <_end+0xfffdb58e>
+    1038:	deadbeef          	jal	t4,fffdc622 <_end+0xfffdb592>
+    103c:	deadbeef          	jal	t4,fffdc626 <_end+0xfffdb596>
+    1040:	deadbeef          	jal	t4,fffdc62a <_end+0xfffdb59a>
+    1044:	deadbeef          	jal	t4,fffdc62e <_end+0xfffdb59e>
+    1048:	deadbeef          	jal	t4,fffdc632 <_end+0xfffdb5a2>
+    104c:	deadbeef          	jal	t4,fffdc636 <_end+0xfffdb5a6>
+    1050:	deadbeef          	jal	t4,fffdc63a <_end+0xfffdb5aa>
+    1054:	deadbeef          	jal	t4,fffdc63e <_end+0xfffdb5ae>
+    1058:	deadbeef          	jal	t4,fffdc642 <_end+0xfffdb5b2>
+    105c:	deadbeef          	jal	t4,fffdc646 <_end+0xfffdb5b6>
+    1060:	deadbeef          	jal	t4,fffdc64a <_end+0xfffdb5ba>
+    1064:	deadbeef          	jal	t4,fffdc64e <_end+0xfffdb5be>
+    1068:	deadbeef          	jal	t4,fffdc652 <_end+0xfffdb5c2>
+    106c:	deadbeef          	jal	t4,fffdc656 <_end+0xfffdb5c6>
+    1070:	deadbeef          	jal	t4,fffdc65a <_end+0xfffdb5ca>
+    1074:	deadbeef          	jal	t4,fffdc65e <_end+0xfffdb5ce>
+    1078:	deadbeef          	jal	t4,fffdc662 <_end+0xfffdb5d2>
+    107c:	deadbeef          	jal	t4,fffdc666 <_end+0xfffdb5d6>
+    1080:	deadbeef          	jal	t4,fffdc66a <_end+0xfffdb5da>
+
+00001084 <signature_x1_0>:
+    1084:	deadbeef          	jal	t4,fffdc66e <_end+0xfffdb5de>
+    1088:	deadbeef          	jal	t4,fffdc672 <_end+0xfffdb5e2>
+    108c:	deadbeef          	jal	t4,fffdc676 <_end+0xfffdb5e6>
+
+Desensamblado de la sección .riscv.attributes:
+
+00000000 <.riscv.attributes>:
+   0:	3541                	jal	fffffe80 <_end+0xffffedf0>
+   2:	0000                	unimp
+   4:	7200                	.2byte	0x7200
+   6:	7369                	lui	t1,0xffffa
+   8:	01007663          	bgeu	zero,a6,14 <offset+0x8>
+   c:	0000002b          	.4byte	0x2b
+  10:	7205                	lui	tp,0xfffe1
+  12:	3376                	.2byte	0x3376
+  14:	6932                	.2byte	0x6932
+  16:	7032                	.2byte	0x7032
+  18:	5f30                	lw	a2,120(a4)
+  1a:	326d                	jal	fffff9c4 <_end+0xffffe934>
+  1c:	3070                	.2byte	0x3070
+  1e:	635f 7032 5f30      	.byte	0x5f, 0x63, 0x32, 0x70, 0x30, 0x5f
+  24:	6d7a                	.2byte	0x6d7a
+  26:	756d                	lui	a0,0xffffb
+  28:	316c                	.2byte	0x316c
+  2a:	3070                	.2byte	0x3070
+  2c:	7a5f 6966 786e      	.byte	0x5f, 0x7a, 0x66, 0x69, 0x6e, 0x78
+  32:	7031                	c.lui	zero,0xfffec
+  34:	0030                	add	a2,sp,8
