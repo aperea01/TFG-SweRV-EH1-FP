@@ -1,0 +1,10 @@
+
+****** Webtalk v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source /home/alejandro/Alejandro/Universidad/TFG/RVfpga_V2.2_ENG/FPU_NewPipe_PrePostSync/project_1/project_1.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-186] '/home/alejandro/Alejandro/Universidad/TFG/RVfpga_V2.2_ENG/FPU_NewPipe_PrePostSync/project_1/project_1.hw/webtalk/usage_statistics_ext_labtool.xml' has been successfully sent to Xilinx on Sun Jan  1 22:04:03 2023. For additional details about this file, please refer to the WebTalk help file at /tools/Xilinx/Vivado/2019.2/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00.80 ; elapsed = 00:00:06 . Memory (MB): peak = 385.035 ; gain = 0.000 ; free physical = 2884 ; free virtual = 4766
+INFO: [Common 17-206] Exiting Webtalk at Sun Jan  1 22:04:03 2023...

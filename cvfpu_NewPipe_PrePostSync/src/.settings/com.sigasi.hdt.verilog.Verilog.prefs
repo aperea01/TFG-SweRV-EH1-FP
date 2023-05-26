@@ -1,0 +1,3 @@
+eclipse.preferences.version=1
+includePath=SweRVolfSoC/SweRVEh1CoreComplex/include;OtherSources/pulp-platform.org__common_cells_1.20.0/include;SweRVolfSoC/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/include;SweRVolfSoC/Interconnect/AxiInterconnect;SweRVolfSoC/Interconnect/WishboneInterconnect
+propertiesDefine=`include "common_defines.vh"

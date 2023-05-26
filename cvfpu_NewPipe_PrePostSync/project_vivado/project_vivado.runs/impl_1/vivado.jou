@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sun May 21 23:23:58 2023
+# Process ID: 71943
+# Current directory: /home/alejandro/Alejandro/Universidad/TFG/RVfpga_V2.2_ENG/cvfpu_NewPipe_PrePostSync/project_vivado/project_vivado.runs/impl_1
+# Command line: vivado -log rvfpganexys.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source rvfpganexys.tcl -notrace
+# Log file: /home/alejandro/Alejandro/Universidad/TFG/RVfpga_V2.2_ENG/cvfpu_NewPipe_PrePostSync/project_vivado/project_vivado.runs/impl_1/rvfpganexys.vdi
+# Journal file: /home/alejandro/Alejandro/Universidad/TFG/RVfpga_V2.2_ENG/cvfpu_NewPipe_PrePostSync/project_vivado/project_vivado.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source rvfpganexys.tcl -notrace

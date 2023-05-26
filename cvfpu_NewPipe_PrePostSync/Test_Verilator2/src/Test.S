@@ -1,0 +1,51 @@
+#define INSERT_NOPS_1	   nop;
+#define INSERT_NOPS_2	   nop; INSERT_NOPS_1
+#define INSERT_NOPS_3	   nop; INSERT_NOPS_2
+#define INSERT_NOPS_4	   nop; INSERT_NOPS_3
+#define INSERT_NOPS_5	   nop; INSERT_NOPS_4
+#define INSERT_NOPS_6	   nop; INSERT_NOPS_5
+#define INSERT_NOPS_7	   nop; INSERT_NOPS_6
+#define INSERT_NOPS_8	   nop; INSERT_NOPS_7
+#define INSERT_NOPS_9	   nop; INSERT_NOPS_8
+#define INSERT_NOPS_10	   nop; INSERT_NOPS_9
+#define SegEn_ADDR    0x80001038
+#define SegDig_ADDR   0x8000103C
+
+
+.globl main
+main:
+
+li t0, 0x400000					
+li t1, 0x1
+li t2,  0x2
+li t3, 0x40800000
+li t4, 0x40000000
+
+
+REPEAT:
+	INSERT_NOPS_10
+	INSERT_NOPS_10
+	mul t2, t2, t1
+	INSERT_NOPS_10
+	INSERT_NOPS_10
+	.word 0x01ce8f53 # fadd.s 0000000 |   t3(rs2) 11100 | t4(rs1) 11101 | 000 | t5(rs3) 11110 | 1010011 
+	INSERT_NOPS_10
+	INSERT_NOPS_10
+	.word 0x11ce8f53 # fmul.s 0001000 | 11100 | 11101 | 000 | 11110 | 1010011
+	INSERT_NOPS_10
+	INSERT_NOPS_10
+	.word 0x19ce8f53 # fdiv.s 0001100 |t3 11100 |t4 11101 | 000 | 11110 | 1010011
+	INSERT_NOPS_10
+	add t4, t4, t0				
+	beq  zero, zero, REPEAT	# Repeat the loop
+	# INSERT_NOPS_10	
+	# INSERT_NOPS_10	
+	# INSERT_NOPS_10	
+    nop
+.end
+
+
+.globl main
+main:
+
+
